@@ -1,7 +1,8 @@
+
+// ! Implementing a sigly Linked List 
 export default class SinglyLinkedList<T> {
     public length: number;
 
-    
 
     constructor() {
     }
