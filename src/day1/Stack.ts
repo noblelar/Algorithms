@@ -6,6 +6,7 @@ type Node<T> ={
 export default class Stack<T> {
     public length: number;
 
+    if(){}
     
 
     constructor() {
