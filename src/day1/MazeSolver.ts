@@ -86,6 +86,7 @@ export default function solve(
 
    walk(maze, wall, start, end, seen, path);
 
+   console.log(path)
    return path;
 
 }
