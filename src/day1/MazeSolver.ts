@@ -76,17 +76,15 @@ export default function solve(
     start: Point,
     end: Point,
 ): Point[] {
+    const seen: boolean[][] = [];
+    const path: Point[] = [];
 
-   const seen: boolean[][] = [];
-   const path: Point[] = [];
+    for (let i = 0; i < maze.length; ++i) {
+        seen.push(new Array(maze[0].length).fill(false));
+    }
 
-   for (let i =0; i<maze.length; ++i){
-      seen.push(new Array(maze[0].length).fill(false));
-   }
+    walk(maze, wall, start, end, seen, path);
 
-   walk(maze, wall, start, end, seen, path);
-
-   console.log(path)
-   return path;
-
+    console.log(path);
+    return path;
 }
