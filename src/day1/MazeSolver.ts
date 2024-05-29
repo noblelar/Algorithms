@@ -1,5 +1,6 @@
 import { matrix2 } from "__tests__/graph";
 
+// Directional coordinates
 const dir = [
     [-1, 0],
     [1, 0],
