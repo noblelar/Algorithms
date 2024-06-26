@@ -70,6 +70,7 @@ function walk(
     path.pop();
     return false;
 }
+// ! end of walk function 
 
 export default function solve(
     maze: string[],
