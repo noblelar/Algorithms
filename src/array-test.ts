@@ -14,7 +14,7 @@ function unshift(number: number) {
 }
 
 function shift(number: number) {
-    for (let i = 0; i < number; ++i) {
+    for (let i = 0; i < number; ++i) { 
         a.shift();
     }
 }
